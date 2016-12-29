@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{9ffcbe05-1b9f-4b0b-b216-89b8a20b6b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public">
+      <UniqueIdentifier>{0d76a7a5-f35f-4396-8434-e7b6d258cf14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private">
+      <UniqueIdentifier>{30906277-b22d-4fb1-905a-55448fe87402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{b5ee196e-ff37-451d-ae85-535c9cfa822e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{aa86e0f6-431d-4e8b-95a1-293f642b4848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Private">
+      <UniqueIdentifier>{1df8a924-c652-4f48-8bbe-5eb861af640e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Public">
+      <UniqueIdentifier>{3efbe6cb-185d-49f9-a13e-fe413a841cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Public">
+      <UniqueIdentifier>{e6356e17-0496-4a52-b28f-24e3a0df77d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Private">
+      <UniqueIdentifier>{f94c8ea8-b356-414b-a716-1f4b07e818b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Inc\Core\Public\Resources\Inferno.ico">
+      <Filter>Core\Public\Resource Files</Filter>
+    </Image>
+    <Image Include="Inc\Core\Public\Resources\small.ico">
+      <Filter>Core\Public\Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Inc\Core\Public\Resources\Inferno.rc">
+      <Filter>Core\Public\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Core\Public\Resource.h">
+      <Filter>Core\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Inc\Core\Private\Inferno.cpp">
+      <Filter>Core\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

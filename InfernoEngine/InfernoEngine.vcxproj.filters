@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{fb533f7c-e642-43c6-9db7-924ecf866840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{1782ea8d-aebb-46f1-bd7a-8deb4d3dc51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{594e0daa-4379-4a8f-8b0b-8550c416d7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private">
+      <UniqueIdentifier>{1bc5927f-25d3-45a7-a56f-7adfede15694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public">
+      <UniqueIdentifier>{b3638941-3f35-42d8-ac54-896e7ca40519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Private">
+      <UniqueIdentifier>{8ac982fe-6aef-4589-989c-1f4c8874689f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Public">
+      <UniqueIdentifier>{4148abf5-d9a4-401b-b593-d1f4746a8385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Private">
+      <UniqueIdentifier>{47052b93-6396-4462-ac3c-4e735c41b7f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Public">
+      <UniqueIdentifier>{544c0ca8-5ef9-471b-9312-22eb7e41ad9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private\Win32Window">
+      <UniqueIdentifier>{fea3e417-3e22-4d10-8660-2f69159f89de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Win32Window">
+      <UniqueIdentifier>{944da70b-bf67-4f3c-99cc-b9e119696a25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Inc\Core\Private\Win32Window\Win32Window.cpp">
+      <Filter>Core\Private\Win32Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Utilities\Private\AssertHelper.cpp">
+      <Filter>Utilities\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Core\Private\InfernoEngine.cpp">
+      <Filter>Core\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Core\Public\Win32Window\Win32Window.h">
+      <Filter>Core\Public\Win32Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\AssertHelper.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\Globals.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Core\Public\Win32Window\IWndProc.h">
+      <Filter>Core\Public\Win32Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Core\Public\InfernoEngine.h">
+      <Filter>Core\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
