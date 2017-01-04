@@ -45,6 +45,12 @@
     <ClCompile Include="Inc\Core\Private\InfernoEngine.cpp">
       <Filter>Core\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Inc\Utilities\Private\FString.cpp">
+      <Filter>Utilities\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Utilities\Private\Console.cpp">
+      <Filter>Utilities\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\Core\Public\Win32Window\Win32Window.h">
@@ -61,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="Inc\Core\Public\InfernoEngine.h">
       <Filter>Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\FString.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\Console.h">
+      <Filter>Utilities\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
