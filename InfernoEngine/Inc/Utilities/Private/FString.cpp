@@ -121,6 +121,9 @@ FString& FString::operator=(const std::wstring& string)
 }
 FString& FString::operator=(const FString& string)
 {
+	if (&string == this)
+		return *this;
+
 	m_uiSize = string.Length();
 
 	if (m_uiCapacity < m_uiSize)
@@ -460,7 +463,7 @@ std::vector<FString> FString::Split(const char* delimiter) const
 		{
 			stringList.push_back(memcmp(&m_pString[stringStart], delimiter, delimLength) == 0 ? FString() : Substring(stringStart, index - 1));
 			index += delimLength - 1;
-			stringStart = index;
+			stringStart = index + 1;
 		}
 	}
 

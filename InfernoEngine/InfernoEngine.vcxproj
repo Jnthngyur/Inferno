@@ -12,19 +12,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\Core\Public\InfernoEngine.h" />
+    <ClInclude Include="Inc\Core\Public\InputManager.h" />
     <ClInclude Include="Inc\Core\Public\Win32Window\IWndProc.h" />
     <ClInclude Include="Inc\Core\Public\Win32Window\Win32Window.h" />
     <ClInclude Include="Inc\Utilities\Public\AssertHelper.h" />
     <ClInclude Include="Inc\Utilities\Public\Console.h" />
+    <ClInclude Include="Inc\Utilities\Public\DynArray.h" />
     <ClInclude Include="Inc\Utilities\Public\FString.h" />
     <ClInclude Include="Inc\Utilities\Public\Globals.h" />
+    <ClInclude Include="Inc\Utilities\Public\InputRegistry.h" />
+    <ClInclude Include="Inc\Utilities\Public\InputVals.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Inc\Core\Private\InfernoEngine.cpp" />
     <ClCompile Include="Inc\Core\Private\Win32Window\Win32Window.cpp" />
+    <ClCompile Include="Inc\Core\Public\InputManager.cpp" />
     <ClCompile Include="Inc\Utilities\Private\AssertHelper.cpp" />
     <ClCompile Include="Inc\Utilities\Private\Console.cpp" />
     <ClCompile Include="Inc\Utilities\Private\FString.cpp" />
+    <ClCompile Include="Inc\Utilities\Private\InputRegistry.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{32369404-10F7-4F1F-A5D2-F9B6E0760330}</ProjectGuid>

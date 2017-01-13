@@ -51,6 +51,12 @@
     <ClCompile Include="Inc\Utilities\Private\Console.cpp">
       <Filter>Utilities\Private</Filter>
     </ClCompile>
+    <ClCompile Include="Inc\Core\Public\InputManager.cpp">
+      <Filter>Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Inc\Utilities\Private\InputRegistry.cpp">
+      <Filter>Utilities\Private</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\Core\Public\Win32Window\Win32Window.h">
@@ -72,6 +78,18 @@
       <Filter>Utilities\Public</Filter>
     </ClInclude>
     <ClInclude Include="Inc\Utilities\Public\Console.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\DynArray.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\InputVals.h">
+      <Filter>Utilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Core\Public\InputManager.h">
+      <Filter>Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Utilities\Public\InputRegistry.h">
       <Filter>Utilities\Public</Filter>
     </ClInclude>
   </ItemGroup>

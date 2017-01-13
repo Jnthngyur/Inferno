@@ -1,5 +1,9 @@
 #include "InfernoEngine.h"
 #include "Win32Window\Win32Window.h"
+#include "InputManager.h"
+
+#include <dbt.h>
+#include <devguid.h>
 
 InfernoEngine::InfernoEngine()
 {
@@ -13,10 +17,19 @@ InfernoEngine::InfernoEngine()
 
 InfernoEngine::~InfernoEngine() {}
 
+bool InfernoEngine::Initialize()
+{
+	Input::Initialize(nullptr);
+
+	return true;
+}
+
 uint16_t InfernoEngine::Run()
 {
 	while (m_bRunning)
 	{
+		Input::Update();
+
 		for (int i = 0; i < m_iNumWindows; i++)
 		{
 			m_pWindows[i]->ProcessMessages();
@@ -79,6 +92,11 @@ LRESULT InfernoEngine::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 	{
 		LONG_PTR WindowPtr = GetWindowLongPtr(hWnd, sizeof(Win32Window*));
 		reinterpret_cast<Win32Window*>(WindowPtr)->SetPosition(LOWORD(lParam), HIWORD(lParam));
+		break;
+	}
+	case WM_DEVICECHANGE:
+	{
+		Input::DeviceChange();
 		break;
 	}
 	default:

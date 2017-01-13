@@ -24,6 +24,8 @@ public:
 	InfernoEngine();
 	~InfernoEngine();
 
+	bool Initialize();
+
 	uint16_t Run();
 
 	// IN: HWND - Handle to the topmost window to be added
